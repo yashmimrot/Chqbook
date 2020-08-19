@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Page</title>
+</head>
+<body>
+<form action="https://www.example.com/payment/success/" method="POST"> // Replace this with your website's success callback URL
+    <script
+            src="https://checkout.razorpay.com/v1/checkout.js"
+            data-key="rzp_test_sgh5tBxgm0PRQ6"
+    data-amount=${amount?c}
+    data-currency="INR"
+    data-order_id=${razorpayOrderId}
+    data-buttontext="Pay with Razorpay"
+    data-name="Acme Corp"
+    data-description="Test transaction"
+    data-image="https://example.com/your_logo.jpg"
+    data-prefill.name="Gaurav Kumar"
+    data-prefill.email="gaurav.kumar@example.com"
+    data-prefill.contact="9999999999"
+    data-theme.color="#F37254"
+    ></script>
+<input type="hidden" custom="Hidden Element" name="hidden">
+</form>
+
+</body>
+</html>
